@@ -1,0 +1,40 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+        <br/><br/><br/><br/>
+<form id="form1" name="form1" method="post" action="">
+  <table width="894" height="128" border="1" class="table table-bordered" id="his">
+            <thead class="thead-light">
+
+    <tr>
+      <th width="51" scope="col">SL NO</th>
+      <th width="167" scope="col">Name</th>
+      <th width="80" scope="col">Gender</th>
+      <th width="106" scope="col">DOB</th>
+      <th width="160" scope="col">Email</th>
+      <th width="112" scope="col">phone</th>
+      <th width="113" scope="col">Address</th>
+      <th width="53" scope="col">&nbsp;</th>
+    </tr>
+            </thead>
+      {% for i in data %}
+    <tr>
+      <td>{{ loop.index }}&nbsp;</td>
+      <td>{{ i['name'] }}</td>
+      <td>&nbsp;{{ i['gender'] }}</td>
+      <td>{{ i['dob'] }}</td>
+      <td>&nbsp;{{i['email']}}</td>
+      <td>{{ i['phone'] }}</td>
+      <td>{{ i['pin']}}<br>
+      {{ i['place'] }}<br>
+      {{ i['city'] }}<br>
+      {{ i['state']}}<br>
+      {{i['type'] }}<br>
+      {{ i['photo'] }}<br></td>
+        <td><button type="button" class="btn btn-danger" style="padding: 4px 23px;"><a href="/admin_block_users/{{ i["ulid"] }}"><font color="#FFFFFF">Block</font></a></button></td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+    <br/><br/><br/><br/>
+{% endblock %}
+

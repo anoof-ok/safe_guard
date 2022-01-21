@@ -1,0 +1,40 @@
+{% extends 'subadmintp.html' %}
+{% block body %}
+    <br/><br/><br/><br/>
+<form id="form1" name="form1" method="post" action="/dangerous_spots">
+  <table width="200" border="1" class="table table-bordered" id="his">
+  <thead class="thead-light">
+  <tr>
+    <th scope="col">type</th>
+    <th scope="col"> <select name="select" id="select2">
+        <option>Police</option>
+        <option>User</option>
+      </select></th>
+  </tr>
+  <tr>
+    <td height="19" colspan="2"><label for="select2"></label>
+      <input type="submit" name="button" id="button" value="Submit" /></td>
+    </tr>
+</table>
+
+  
+  <table width="285" height="85" border="1">
+    <tr>
+      <th scope="col">sl no</th>
+      <th scope="col">location</th>
+      <th scope="col">latitude</th>
+      <th scope="col">longitude</th>
+    </tr>
+  </thead>
+            {% for i in data %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ i['location'] }}</td>
+      <td>{{ i['latitude'] }}</td>
+      <td>{{ i['longitude'] }}</td>
+    </tr>
+            {% endfor %}
+  </table>
+</form>
+<br/><br/><br/><br/>
+{% endblock %}

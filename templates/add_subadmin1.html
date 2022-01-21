@@ -1,0 +1,87 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+
+{#<body>#}
+{#<form id="form1" enctype="multipart/form-data" name="form1" method="post" action="/add_subadmin_post">#}
+{#  <table width="278" height="254" border="1">#}
+{#    <tr>#}
+{#      <th width="115" scope="row">Name</th>#}
+{#      <td width="140"><label for="textfield"></label>#}
+{#      <input type="text" name="textfield" id="textfield" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Place</th>#}
+{#      <td><label for="textfield2"></label>#}
+{#      <input type="text" name="textfield2" id="textfield2" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Post</th>#}
+{#      <td><label for="textfield3"></label>#}
+{#      <input type="text" name="textfield3" id="textfield3" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Pin</th>#}
+{#      <td><label for="textfield4"></label>#}
+{#      <input type="text" name="textfield4" id="textfield4" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Email</th>#}
+{#      <td><label for="textfield5"></label>#}
+{#      <input type="text" name="textfield5" id="textfield5" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Contact</th>#}
+{#      <td><label for="textfield6"></label>#}
+{#      <input type="text" name="textfield6" id="textfield6" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Photo</th>#}
+{#      <td><label for="textfield7"></label>#}
+{#      <input type="file" name="textfield7" id="textfield7" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th colspan="2" scope="row"><label for="textfield7">#}
+{#        <input type="submit" name="button" id="button" value="Submit" />#}
+{#      </label></th>#}
+{#    </tr>#}
+{#  </table>#}
+{#</form>#}
+{#</body>#}
+ <div class="contact-page-wrao section-padding" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <div class="contact-form">
+                        <form id="form1" name="form1" method="post" action="/add_subadmin_post" enctype="multipart/form-data">
+                             <div class="message-input">
+                          <input type="text" name="textfield" id="textfield" required placeholder="name"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="textfield2" id="textfield" required placeholder="place"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="textfield3" id="textfield" required placeholder="post"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="textfield4" id="textfield" required placeholder="pin"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="textfield5" id="textfield" required placeholder="email"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="textfield6" id="textfield" required placeholder="contact"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="file" name="textfield7" id="textfield" >
+                            </div>
+
+                            <div class="input-submit">
+                                <button type="submit" name="button">ADD</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

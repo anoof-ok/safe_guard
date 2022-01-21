@@ -1,0 +1,71 @@
+{% extends 'subadmintp.html' %}
+{% block body %}
+{#<body>#}
+{#<form action="/add_safe_pointpost" method="post" enctype="multipart/form-data" name="form1" id="form1">#}
+{#  <table width="344" height="137" border="1">#}
+{#    <tr>#}
+{#      <th width="82" scope="row">Place</th>#}
+{#      <td width="102"><label for="textfield"></label>#}
+{#      <input type="text" name="textfield" id="textfield" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Longitude</th>#}
+{#      <td><label for="textfield3"></label>#}
+{#      <input type="text" name="textfield3" id="textfield3" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Latitude</th>#}
+{#      <td><label for="textfield4"></label>#}
+{#      <input type="text" name="textfield4" id="textfield4" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Description</th>#}
+{#      <td><label for="textfield2"></label>#}
+{#      <input type="text" name="textfield2" id="textfield2" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th scope="row">Image</th>#}
+{#      <td><label for="fileField"></label>#}
+{#      <input type="file" name="fileField" id="fileField" /></td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#      <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="Submit" /></th>#}
+{#    </tr>#}
+{#  </table>#}
+{#</form>#}
+{#</body>#}
+{#  #}
+{#  #}
+{#  #}
+  <div class="contact-page-wrao section-padding" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <div class="contact-form">
+                        <form id="form1" name="form1" method="post" enctype="multipart/form-data" action="/add_safe_pointpost">
+                             <div class="message-input">
+                          <input type="text" name="textfield" id="textfield" required placeholder="place"/>
+                            </div>
+                              <div class="message-input">
+                          <input type="text" name="textfield3" id="textfield" required placeholder="longitude"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="textfield4" id="textfield" required placeholder="latitude"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="textfield2" id="textfield" required placeholder="description"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="file" name="fileField" id="fileField" >
+                            </div>
+
+                            <div class="input-submit">
+                                <button type="submit" name="button">ADD</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

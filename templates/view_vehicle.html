@@ -1,0 +1,28 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+    <br/><br/><br/><br/>
+<form id="form1" name="form1" method="post" action="vehicle_view">
+  <table width="299" height="84" border="1" class="table table-bordered" id="his">
+            <thead class="thead-light">
+
+    <tr><th>vid</th>
+      <th scope="col">vehicle name</th>
+      <th scope="col">vehicle number</th>
+      <th scope="col">Rc owner</th>
+      <th colspan="2" scope="col">&nbsp;</th>
+    </tr>
+    </thead>
+      {% for i in data %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ i['vname'] }}</td>
+      <td>{{ i['vnumber'] }}</td>
+      <td>{{ i['rcowner'] }}</td>
+        <td><button type="button" class="btn btn-danger" style="padding: 4px 23px;"><a href="/delete_vehicle/{{ i['vid'] }}"><font color="#FFFFFF">Delete</font></a></button> </td>
+        <td><button type="button" class="btn btn-primary" style="padding: 4px 25px;"><a href="/edit_vehiclee/{{ i['vid'] }}"><font color="#FFFFFF">Edit</font></a></button> </td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+<br/><br/><br/><br/>
+{% endblock %}

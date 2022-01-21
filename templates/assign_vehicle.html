@@ -1,0 +1,57 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+
+
+{#<body>#}
+{#<form id="form1" name="form1" method="post" action="/assign_post"><table width="259" height="125" border="1">#}
+{#  <tr>#}
+{#    <th scope="row">Vehicle</th>#}
+{#    <td>#}
+{#        <select name="select">#}
+{#            {% for i in data %}#}
+{#                <option value="{{ i['vid'] }}">{{ i['vname'] }}</option>#}
+{#            {% endfor %}#}
+{#        </select>#}
+{#    </td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">Station</th>#}
+{#    <td>#}
+{#         <select name="select2">#}
+{#             {% for i in data2 %}#}
+{#                <option value="{{ i['stlid'] }}">{{ i['stationname'] }}</option>#}
+{#            {% endfor %}#}
+{##}
+{#        </select>#}
+{#    </td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="Submit" /></th>#}
+{#    </tr>#}
+{#</table>#}
+{##}
+{#</form>#}
+{#</body>#}
+ <div class="contact-page-wrao section-padding" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <div class="contact-form">
+                        <form id="form1" name="form1" method="post" action="/assign_post">
+                             <div class="message-input">
+                          <input type="text" name="select" id="textfield" required placeholder="vehicle"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="select2" id="textfield" required placeholder="station"/>
+                            </div>
+
+                            <div class="input-submit">
+                                <button type="submit" name="button">ADD</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

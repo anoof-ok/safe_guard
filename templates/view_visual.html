@@ -1,0 +1,24 @@
+{% extends 'subadmintp.html' %}
+{% block body %}
+    <br/><br/><br/><br/>
+<form id="form1" name="form1" method="post" action="">
+  <table width="200" border="1" class="table table-bordered" id="his">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">sl no</th>
+      <th scope="col">file</th>
+      <th scope="col">type</th>
+    </tr>
+   </thead>
+      {% for i in data %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ i['file'] }}</td>
+      <td>{{ i['type'] }}</td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+<br/><br/><br/><br/>
+{% endblock %}
+

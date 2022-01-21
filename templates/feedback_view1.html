@@ -1,0 +1,27 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+    <br/><br/><br/><br/>
+<form id="form1" name="form1" method="post" action="view_feedback">
+  <table width="310" height="70" border="1" class="table table-bordered" id="his">
+              <thead class="thead-light">
+
+    <tr>
+      <th scope="col">Sl no</th>
+      <th scope="col">Date</th>
+      <th scope="col">feedback</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+              </thead>
+       {% for i in data %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ i['date'] }}</td>
+      <td>{{ i['feedback'] }}</td>
+        <td><button type="button" class="btn btn-danger" style="padding: 4px 23px;"><a href="/delete_feedback/{{ i['fid'] }}"><font color="#FFFFFF">Delete</font></a></button></td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+<br/><br/><br/><br/>
+{% endblock %}
+

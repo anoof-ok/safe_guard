@@ -1,0 +1,39 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+    <br/><br/><br/><br/>
+<form id="form1" name="form1" method="post" action="">
+  <table width="547" border="1" class="table table-bordered" id="his">
+          <thead class="thead-light">
+    <tr>
+      <th scope="col">Sl. No</th>
+      <th scope="col">Station Name</th>
+      <th scope="col">Place</th>
+      <th scope="col">State</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Pin</th>
+      <th scope="col">City</th>
+      <th scope="col">Street</th>
+
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    </thead>
+      {% for i in data %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ i['stationname'] }}</td>
+      <td>{{ i['place'] }}</td>
+      <td>{{i ['state'] }}</td>
+      <td>{{ i['phone'] }}</td>
+      <td>{{ i['email'] }}</td>
+      <td>&nbsp;{{ i['pin'] }}</td>
+      <td>{{ i['city'] }}</td>
+      <td>{{ i['street'] }}</td>
+        <td><button type="button" class="btn btn-danger" style="padding: 4px 23px;"><a href="/edit_police/{{ i['stid'] }}"><font color="#FFFFFF">Edit</font></a></button> </td>
+        <td><button type="button" class="btn btn-primary" style="padding: 4px 25px;"><a href="/delete_police/{{ i['stid'] }}"><font color="#FFFFFF">Delete</font></a></button> </td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+<br/><br/><br/><br/>
+{% endblock %}

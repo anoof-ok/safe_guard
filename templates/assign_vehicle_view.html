@@ -1,0 +1,26 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+    <br/><br/><br/><br/>
+<form id="form1" name="form1" method="post" action="">
+  <table width="547" height="82" border="1" class="table table-bordered" id="his">
+              <thead class="thead-light">
+
+    <tr>
+      <th scope="col">Sl. No</th>
+      <th scope="col">Station Name</th>
+      <th scope="col">Vehicle</th>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+              </thead>
+      {% for i in data %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ i['stationname'] }}, {{ i['place'] }}</td>
+      <td>{{ i['vnumber'] }},{{ i['vname'] }}</td>
+        <td><button type="button" class="btn btn-danger" style="padding: 4px 23px;"><a href="/delete_assign/{{ i['aid'] }}"><font color="#FFFFFF">Delete</font></a></button></td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+<br/><br/><br/><br/>
+{% endblock %}

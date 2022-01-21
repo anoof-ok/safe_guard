@@ -1,0 +1,62 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+{#<body>#}
+{#<form id="form2" name="form2" method="post" action="/add_vehicle_post">#}
+{#<table width="236" height="168" border="1">#}
+{##}
+{#  <tr>#}
+{#    <th scope="row">Name</th>#}
+{#    <td>#}
+{#      <input type="text" name="textfield2" id="textfield2" />#}
+{#    </td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">Number</th>#}
+{#    <td>#}
+{#      <input type="text" name="textfield3" id="textfield3" />#}
+{# </td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">RC owner</th>#}
+{#    <td>#}
+{#      <input type="text" name="textfield4" id="textfield4" />#}
+{#    </td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th colspan="2" scope="row">#}
+{#      <input type="submit" name="button" id="button" value="Submit" />#}
+{#    </th>#}
+{#  </tr>#}
+{#</table>#}
+{#    </form>#}
+{#</body>#}
+{#  #}
+{#  #}
+{#  #}
+  <div class="contact-page-wrao section-padding" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <div class="contact-form">
+                        <form id="form1" name="form1" method="post" action="/add_vehicle_post">
+                             <div class="message-input">
+                          <input type="text" name="textfield2" id="textfield" required placeholder="Name"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="textfield3" id="textfield" required placeholder="Number"/>
+                            </div>
+                            <div class="message-input">
+                          <input type="text" name="textfield4" id="textfield" required placeholder="rcowner"/>
+                            </div>
+
+                            <div class="input-submit">
+                                <button type="submit" name="button">ADD</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

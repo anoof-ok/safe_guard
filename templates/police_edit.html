@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="/update_police_post">
+<table width="286" height="325" border="1">
+  <tr>
+    <th scope="row">Station Name</th>
+    <td>
+          <input type="text" name="textfield" id="textfield" value="{{ data['stationname'] }}"/>
+   </td>
+  </tr>
+  <tr>
+    <th scope="row">Place</th>
+    <td>
+      <input type="text" name="textfield2" id="textfield2" value="{{ data['place'] }}" />
+   </td>
+  </tr>
+  <tr>
+    <th scope="row">City</th>
+    <td>
+        <input type="text" name="textfield3" id="textfield3" value="{{ data['city'] }}" />
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">Pin</th>
+    <td>
+      <input type="text" name="textfield4" id="textfield4" value="{{ data['pin'] }}" />
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">Street</th>
+    <td>
+      <input type="text" name="textfield5" id="textfield5" value="{{ data['street'] }}" />
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">State</th>
+    <td>
+      <input type="text" name="textfield6" id="textfield6" value="{{ data['state'] }}" />
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">Phone</th>
+    <td>
+      <input type="text" name="textfield7" id="textfield7" value="{{ data['phone'] }}" />
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">Email</th>
+    <td>
+        <input type="text" name="textfield9" id="textfield9" value="{{ data['email'] }}" disabled />
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">latitude</th>
+    <td>
+        <input type="text" name="textfield10" id="textfield10" value="{{ data['latitude'] }}" />
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">langitude</th>
+    <td>
+      <input type="text" name="textfield8" id="textfield8" value="{{ data['langitude'] }}" />
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2" scope="row"><form id="form9" name="form9" method="post" action="">
+      <input type="submit" name="button" id="button" value="Submit" />
+    </form></th>
+  </tr>
+</table>
+</form>
+</body>
+</html>

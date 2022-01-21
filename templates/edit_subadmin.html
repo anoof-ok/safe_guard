@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body><form id="form1" name="form1" method="post" action="/update_subadmin_post">
+    <input name="sid" type="hidden" value="{{ i['sbid'] }}"/>
+  <table width="278" height="254" border="1">
+    <tr>
+      <th width="115" scope="row">Name</th>
+      <td width="140">
+      <input type="text" name="textfield" id="textfield" value="{{ i['name'] }}" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Place</th>
+      <td>
+      <input type="text" name="textfield2" id="textfield2" value="{{ i['place'] }}" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Post</th>
+      <td>
+      <input type="text" name="textfield3" id="textfield3" value="{{ i['post'] }}" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Pin</th>
+      <td>
+      <input type="text" name="textfield4" id="textfield4" value="{{ i['pin'] }}" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <td>
+      <input type="text" name="textfield5" id="textfield5" value="{{ i['email'] }}" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Contact</th>
+      <td>
+      <input type="text" name="textfield6" id="textfield6" value="{{ i['contact'] }}" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Photo</th>
+      <td>
+      <input type="file" name="textfield7" id="textfield7" value="{{ i['photo'] }}" /></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row">
+        <input type="submit" name="button" id="button" value="Submit" />
+      </label></th>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
